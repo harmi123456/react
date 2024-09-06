@@ -1,0 +1,123 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/4041242/pexels-photo-4041242.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4041242.jpg&fm=jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.form-container {
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+  font-weight: bold;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+select{
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: -30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#select{
+  display: flex;
+}
+.quantity{
+  width: 50%;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+
+.submitted-data {
+  width: 320px;
+  margin: 20px;
+  padding: 20px;
+  background: linear-gradient(rgba(32, 32, 32, 0.655), rgba(0, 0, 0, 0.575)) , url("https://www.shutterstock.com/image-vector/business-financial-investment-credit-card-600nw-2040338441.jpg");
+  background-position: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.submitted-data h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.submitted-data p {
+  margin: 10px 0;
+  display: flex;
+  color: rgb(171, 233, 242);
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.submitted-data p strong {
+  font-weight: 600;
+}
+
+.submitted-data p:last-child {
+  font-size: 18px;
+  font-weight: bold;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.submitted-data .gst {
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: black;
+  text-align: right;
+}
+
+.submitted-data .price {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  color: #94d88f;
+}
