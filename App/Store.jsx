@@ -1,9 +1,8 @@
-
-import { configureStore } from "@reduxjs/toolkit"
-import Counter  from "../Feature/Slice"
+import { configureStore } from "@reduxjs/toolkit";
+import  todo  from "../Feature/Slice";
 
 export const store = configureStore({
     reducer : {
-        counterKey: Counter
+        todoKey: todo
     }
 })
