@@ -1,63 +1,131 @@
-import { onAuthStateChanged } from 'firebase/auth';
-import React, { useEffect, useState } from 'react'
+
+import React, { useEffect, useState } from 'react';
 import { auth, db } from '../../firebaseConfig';
-import { doc, getDoc } from 'firebase/firestore';
+import { doc, getDoc, updateDoc } from 'firebase/firestore';
 
 export default function Dashboard() {
+  const [newTask, setNewTask] = useState("")
+  const [newPriority, setNewPriority] = useState("")
+  const [status, setStatus] = useState("")
+  const [editIndex, setEditIndex] = useState(null)
 
-  const [user, setUser] = useState(null);
-  const [userName, setUserName] = useState(null);
+  const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    let subscribe = onAuthStateChanged(auth, (currentUser) => {
-      if(currentUser) {
-        setUser(currentUser)
+    const fetchTasks = () => {
+      if (auth.currentUser) {
+        const userDocRef = doc(db, 'users', auth.currentUser.uid);
+
+        getDoc(userDocRef)
+          .then((userDoc) => {
+            if (userDoc.exists()) {
+              const data = userDoc.data();
+              setTasks(data.tasks || []);
+            } else {
+              console.log('No such document found in Firestore!');
+            }
+          })
       }
-    })
-    return () => subscribe();
-  },[])
+    };
 
-  useEffect(() => {
-    if(user) {
-     fetchUser()    
+    fetchTasks();
+  }, []);
+
+
+  //delete
+  const handleDelete = (taskIndex) => {
+    if (auth.currentUser) {
+      const userDocRef = doc(db, 'users', auth.currentUser.uid);
+
+      getDoc(userDocRef)
+        .then((userDoc) => {
+          if (userDoc.exists()) {
+            const data = userDoc.data();
+            const updatedTasks = [...(data.tasks || [])];
+            updatedTasks.splice(taskIndex, 1); 
+
+            // Update Firestore
+            updateDoc(userDocRef, { tasks: updatedTasks })
+              .then(() => {
+                console.log('Task deleted successfully!');
+                setTasks(updatedTasks); 
+              })
+          }
+        })
     }
-  },[user])
+    setNewTask("")
+    setNewPriority("")
+    setStatus("")
+  };
 
-  // const fetchUser = () => {
-  //   console.log(user.uid);
-  //   getDoc(doc (db, "users", user.uid) ) 
-  //   .then(data => {
-  //     console.log(data.data())
-  //   })
-    
-  // }
+  // Handle edit
+  const handleEdit = (taskIndex) => {
+    const taskToEdit = tasks[taskIndex];
+    setNewTask(taskToEdit.task); 
+    setNewPriority(taskToEdit.priority); 
+    setStatus(taskToEdit.status);
+    setEditIndex(taskIndex); 
+  };
 
-  const fetchUser = async () => {
-    try {
-      const docRef = doc(db, "users", user.uid);
-      const docSnap = await getDoc(docRef);
-      if (docSnap.exists()) {
-        setUserName(docSnap.data()); 
+  // Handle task update or add
+  const handleSave = () => {
+    if (auth.currentUser) {
+      const userDocRef = doc(db, 'users', auth.currentUser.uid);
+
+      let updatedTasks = [...tasks];
+      if (editIndex !== null) {
+        updatedTasks[editIndex] = { task: newTask, priority: newPriority, status: status, };
       } else {
-        console.log("No such document!");
+        updatedTasks.push({ task: newTask, priority: newPriority, status: status, });
       }
-    } catch (error) {
-      console.error("Error fetching user data:", error);
+
+      // Update Firestore 
+      updateDoc(userDocRef, { tasks: updatedTasks })
+        .then(() => {
+          console.log('Tasks updated successfully!');
+          setTasks(updatedTasks); 
+          setNewTask("");
+          setNewPriority("");
+          setStatus("")
+          setEditIndex(null); 
+        })
     }
   };
 
+
   return (
-    <div className='SignUp' style={{background: ''}}>
-        <h1>Welcome to my Home Page</h1>
-        {userName && (
-          <>
-            <h3 className="typewriter">
-              <p>Hello, {userName.name}!</p>
-            </h3>
-            <img style={{marginTop:'-100px'}} src="https://i.pinimg.com/originals/d3/7e/cf/d37ecf1402355fa3bf9fc70a45e3e379.gif" alt="" /> 
-            </>
-      )}
+    <div className="main_dash">
+
+      <div className="Dashboard">
+
+      <h1>Welcome to My Dashboard</h1>
+      <input type="text" placeholder='Enter new Task' value={newTask} onChange={(e) => setNewTask(e.target.value)} />
+      <input type="text" placeholder='Enter Priority' value={newPriority} onChange={(e) => setNewPriority(e.target.value)} />
+      <input type="text" placeholder='Enter status' value={status} onChange={(e) => setStatus(e.target.value)} />
+      <button onClick={handleSave}>
+        {editIndex !== null ? "Update Task" : "Add New Task"}
+      </button>
+
+      <div className="tasks">
+        <h2>Your Tasks:</h2>
+        {tasks.length > 0 ? (
+          <ul>
+            {tasks.map((taskObj, index) => (
+              <li key={index}>
+                <p><strong>Task:</strong> {taskObj.task}</p>
+                <p><strong>Priority:</strong> {taskObj.priority}</p>
+                <p><strong>Status:</strong> {taskObj.status || 'Not provided'}</p> <br />
+                <button onClick={() => handleEdit(index)}>Edit</button>
+                <button onClick={() => handleDelete(index)}>Delete</button>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>No tasks available!</p>
+        )}
+      </div>
+      </div>
 
     </div>
-  )
+  );
 }
