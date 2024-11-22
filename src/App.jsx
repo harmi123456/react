@@ -1,16 +1,20 @@
+  import React, { useState } from 'react'
+  import Login from './Login'
+  import { BrowserRouter, Route, Routes } from 'react-router-dom'
+  import Dashboard from './Dashboard'
 
-import React from 'react'
-import Logic from './Pr_2/Logic'
-import Counter from './Pr_2/Counter'
-import Extra from './extra'
-import Home from './Home'
-
-export default function App() {
-  return (
-    <div>
-      {/* <Logic/> */}
-      {/* <Counter/> */}
-      <Home/>      
-    </div>
-  )
-}
+  export default function App() {
+    const [user, setUser] = useState("")
+    // const [photo, setPhoto] = useState("")
+    return (
+      <div>
+        {/* <Login/> */}
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Login setUser={setUser} />} ></Route>
+            <Route path='/dashboard' element={<Dashboard user={user} />}></Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
+    )
+  }
