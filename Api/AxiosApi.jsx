@@ -1,131 +1,226 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+// import axios from 'axios'
+// import React, { useEffect, useState } from 'react'
+
+// export default function AxiosApi() {
+//     const [data, setData] = useState("")
+
+//     const FetchApi = async () => {   
+//         // axios.get("http://localhost:5001/cars")
+//         // .then((response) => {
+//         //     console.log(response.data);
+//         //     setData(response.data);
+//         // })
+//         const response = await axios.get("http://localhost:5001/cars")
+//         console.log(response.data)  
+//         setData(response.data)
+//     }
+
+//     useEffect(() => {
+//         FetchApi()
+//     }, [])
+
+//     return (
+//         <div>
+//             <h1>AxiosApi</h1>
+
+//             {/* Display Data */}
+//             {data.length > 0 ? (
+//                 data.map((e, i) => (
+//                     <ul key={i}>
+//                         <li>Title: {e.title}</li>
+//                         <li>Views: {e.views}</li>
+//                         <li>Accessories: {e.accessories}</li>
+//                         {e.image && <img className="img" src={e.image} alt="Car" />}
+//                     </ul>
+//                 ))
+//             ) : (
+//                 <p>Loading data or no data available...</p>
+//             )}
+
+//         </div>
+
+//     )
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, removeFromCart, updateCartQuantity, clearCart, FetchApi, updateCartItem } from "../Feature/Slice";
+import { Link } from "react-router-dom";
 
 export default function AxiosApi() {
+    const dispatch = useDispatch();
+    const record = useSelector((state) => state.apiKey);
 
-    const [data, setData] = useState("");
-
-    const [newTitle, setNewTitle] = useState('');
-    const [newViews, setNewViews] = useState('');
-    const [newAccessories, setNewAccessories] = useState('');
-    const [newImage, setNewImage] = useState("");
-
-    const [EditId, setEditId] = useState(null);
-    const [editTitle, setEditTitle] = useState('');
-    const [editViews, setEditViews] = useState('');
-    const [editAccessories, setEditAccessories] = useState('');
-    const [editImage, setEditImage] = useState("");
+    const [editingItemId, setEditingItemId] = useState(null);
+    const [newItemDetails, setNewItemDetails] = useState({ title: "", quantity: 1, image: "" });
+    const [cartVisible, setCartVisible] = useState(false);
 
     useEffect(() => {
-        FetchApi();
-    },[])
+        dispatch(FetchApi());
+    }, []);
 
-    const FetchApi = async () => {
-        const response = await axios.get("http://localhost:5000/cars")
-        console.log(response.data)
-        setData(response.data)
-    }
-
-    const addData = async () => {
-
-        const newcar = { title: newTitle, views: newViews, accessories: newAccessories, image: newImage}
-        let addResponse = await axios.post("http://localhost:5000/cars", newcar)
-        console.log(addResponse)
-        setData([...data,addResponse.data])
-
-        setNewTitle("")
-        setNewViews("")
-        setNewAccessories("")
-        setNewImage("")
-    }
-
-    const deleteData = async (id) => {
-        let deleteRecord = await axios.delete(`http://localhost:5000/cars/${id}`)
-        console.log(id)
-        setData(data.filter(item => item.id !== id))
-    }
-
-    const editData = async (car) => {
-        setEditId(car.id)
-        setEditTitle(car.title)
-        setEditViews(car.views)
-        setEditAccessories(car.accessories)
-        setEditImage(car.image)
-    }
-
-    const saveEditData = async (id) => {
-        const updatedCar = { title: editTitle, views: editViews, accessories: editAccessories, image: editImage};
-        await axios.put(`http://localhost:5000/cars/${id}`, updatedCar);
-        const updatedData = data.map((car) => (car.id === id ? { ...car, ...updatedCar } : car));
-        setData(updatedData);
-        setEditId(null);  
+    const handleAddToCart = (item) => {
+        dispatch(addToCart(item));
+        setCartVisible(true);
     };
-    
-  return (
-    <div className='main'>
-        <br /><br /><br />
-        <h1>AxiosApi</h1>
 
-        <h3>Enter details about your car</h3>
-        <input type="text" value={newTitle} placeholder='Enter Title' onChange={(e) => setNewTitle(e.target.value)} /> <br />
-        <input type="number" value={newViews} placeholder='Enter views' onChange={(e) => setNewViews(e.target.value)} /> <br />
-        <input type="text" value={newAccessories} placeholder='Enter accessories' onChange={(e) => setNewAccessories(e.target.value)} /> <br />
-        <input type="text" value={newImage} placeholder='Enter image URL' onChange={(e) => setNewImage(e.target.value) } />
+    const handleRemoveFromCart = (id) => {
+        dispatch(removeFromCart(id));
+    };
 
-        <button onClick={addData}>Add Data</button>
+    const handleUpdateQuantity = (id, quantity) => {
+        dispatch(updateCartQuantity({ id, quantity }));
+    };
 
-        <div className='displayData'>
+    const handleClearCart = () => {
+        dispatch(clearCart());
+        setCartVisible(false);
+    };
+
+    const handleEditClick = (itemId, currentDetails) => {
+        setEditingItemId(itemId);
+        setNewItemDetails(currentDetails);
+    };
+
+    const handleSaveClick = (itemId) => {
+        dispatch(updateCartItem({
+            id: itemId,
+            title: newItemDetails.title,
+            image: newItemDetails.image,
+            quantity: newItemDetails.quantity,
+        }));
+        setEditingItemId(null)
+    };
+
+    const handleChangeDetail = (e) => {
+        const { name, value } = e.target;
+        setNewItemDetails((prevDetails) => ({
+            ...prevDetails,
+            [name]: value,
+        }));
+    };
+
+    return (
+        <div>
+            {/* <h1>AxiosApi</h1> */}
+
+            <nav>
+                <Link to='/' >All Products</Link> &nbsp;&nbsp;
+                <Link to='/car'>Cars</Link> &nbsp;&nbsp;
+                <Link to='/cosmetics'>Cosmetics</Link> &nbsp;&nbsp;
+                <Link to='/bag'>Bags</Link> &nbsp;&nbsp;
+                <Link to='/mobile'>Mobile</Link> &nbsp;&nbsp;
+                <Link to='/gift'>Gift</Link>
+            </nav>
+
+            {/* Product List */}
+            <div className="product-container">
+                {record.data &&
+                    record.data.map((e, i) => (
+                        <div className="product-card" key={i}>
+                            <img src={e.image} alt="Product" />
+                            <h3>{e.title}</h3>
+                            <p>Views: {e.views}</p>
+                            <p> {e.accessories + " , "}</p>
+                            {/* <p>{e.description || "No description available"}</p> */}
+
+                            <button onClick={() => handleAddToCart(e)}>Add to Cart</button>
+                        </div>
+                    ))
+                }
+            </div>
+
+            {/* Cart Section on the Left Side */}
             {
-                data &&
-                data.map((e,i) => {
-                    return(
-
-                        // <ul key={i}>
-                        //     <li>{e.id}</li>
-                        //     <li>{e.title}</li>
-                        //     <li>{e.views}</li>
-                        //     <li>{e.accessories}</li>
-                        //     <button onClick={() =>  editData(e.id)}>Edit</button>
-                        //     <button onClick={() => deleteData(e.id) }>Delete</button>                       
-                        // </ul>
-
-                        <ul key={i}>
-                                {/* <li>{}</li> */}
-
-                                {EditId === e.id ? (
-                                    <>
-                                        <li>
-                                            <input type="text" placeholder='Enter Title' value={editTitle} onChange={(e) => setEditTitle(e.target.value)} />
-                                        </li>
-                                        <li>
-                                            <input type="number" placeholder='Enter Views' value={editViews} onChange={(e) => setEditViews(e.target.value)} />
-                                        </li>
-                                        <li>
-                                            <input type="text" placeholder='Enter Accessories' value={editAccessories} onChange={(e) => setEditAccessories(e.target.value)} />
-                                        </li>
-                                        <li>
-                                            <input type="text" placeholder='Enter URL' value={editImage} onChange={(e) => setEditImage(e.target.value)} />
-                                        </li>
-
-                                        <button onClick={() => saveEditData(e.id)}>Save</button>
-                                    </>
-                                ) : (
-                                    <>
-                                        <li>{e.title}</li>
-                                        <li>{e.views}</li>
-                                        <li>{e.accessories && e.accessories}</li>
-                                        <button onClick={() => editData(e)}>Edit</button>
-                                        <button onClick={() => deleteData(e.id)}>Delete</button> <br /> <br />
-                                        <img className='img' src={e.image} alt="" />
-                                    </>
-                                )}
-                        </ul>
-                        
-                    )
-                })
+                cartVisible && (
+                    <div className={`cart-section ${cartVisible ? "active" : ""}`}>
+                        <h2>Cart Items</h2>
+                        {record.cart.length === 0 ? (
+                            <p>Your cart is empty.</p>
+                        ) : (
+                            record.cart.map((e, i) => (
+                                <div key={i} className="cart-item">
+                                    {editingItemId === e.id ? (
+                                        <div className="edit-item-container">
+                                            <p>
+                                                Title:
+                                                <input
+                                                    type="text"
+                                                    name="title"
+                                                    value={newItemDetails.title}
+                                                    onChange={handleChangeDetail}
+                                                />
+                                            </p>
+                                            <p>
+                                                Quantity:
+                                                <input
+                                                    type="number"
+                                                    name="quantity"
+                                                    value={newItemDetails.quantity}
+                                                    onChange={handleChangeDetail}
+                                                />
+                                            </p>
+                                            <p>
+                                                Image URL:
+                                                <input
+                                                    type="text"
+                                                    name="image"
+                                                    value={newItemDetails.image}
+                                                    onChange={handleChangeDetail}
+                                                />
+                                            </p>
+                                            <button onClick={() => handleSaveClick(e.id)} style={{ background: "green" }}>
+                                                Save
+                                            </button>
+                                        </div>
+                                    ) : (
+                                        <div>
+                                            <p>Title: {e.title}</p>
+                                            <p>Quantity: {e.quantity}</p>
+                                            <img src={e.image} alt="" />
+                                            <button
+                                                onClick={() => handleEditClick(e.id, { title: e.title, quantity: e.quantity, image: e.image })}
+                                                style={{ background: "blue" }}
+                                            >
+                                                Edit
+                                            </button>
+                                            <button onClick={() => handleRemoveFromCart(e.id)} style={{ background: "red" }}>
+                                                Remove
+                                            </button>
+                                        </div>
+                                    )}
+                                </div>
+                            ))
+                        )}
+                        {record.cart.length > 0 && (
+                            <button className="clear-cart-button" onClick={handleClearCart}>
+                                Clear Cart
+                            </button>
+                        )}
+                    </div>
+                )
             }
-        </div>
 
-    </div>
-  )
+
+
+        </div>
+    );
 }
