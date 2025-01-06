@@ -1,0 +1,580 @@
+{
+  "Dairy": [
+    {
+      "title": "Amul Taaza Toned Fresh Milk",
+      "price": "₹56",
+      "image": "/img/img-9.jpg",
+      "Quantity": "500ml",
+      "id": "1",
+      "category": "Milk",
+      "quantity": 0
+    },
+    {
+      "title": "Mother Dairy Toned  Milk ",
+      "price": "₹28",
+      "image": "/img/img-3.jpg",
+      "Quantity": "500ml",
+      "id": "2",
+      "category": "Milk",
+      "quantity": 0
+    },
+    {
+      "title": "Mother Dairy Cow Fresh Milk",
+      "price": "₹29",
+      "image": "/img/img-4.jpg",
+      "Quantity": "500ml",
+      "id": "3",
+      "category": "Milk",
+      "quantity": 0
+    },
+    {
+      "title": "Amul Taaza Homogenised Toned Milk",
+      "price": "₹71",
+      "image": "/img/img-7.jpg",
+      "Quantity": "1 ltr",
+      "id": "4",
+      "category": "Milk",
+      "quantity": 0
+    },
+    {
+      "title": "Heritage Milk Double Toned",
+      "price": "₹48",
+      "image": "/img/img-2.jpg",
+      "Quantity": "500ml",
+      "id": "5",
+      "category": "Milk",
+      "quantity": 0
+    },
+    {
+      "title": "Heritage Milk Double Toned",
+      "price": "₹48",
+      "image": "/img/img-5.jpg",
+      "Quantity": "500ml",
+      "id": "6",
+      "category": "Milk",
+      "quantity": 0
+    },
+    {
+      "title": "Heritage Milk Double Toned",
+      "price": "₹48",
+      "image": "/img/img-1.jpg",
+      "Quantity": "500ml",
+      "id": "7",
+      "category": "Milk",
+      "quantity": 0
+    },
+    {
+      "title": "Amul Lactose Free Milk",
+      "price": "₹25",
+      "image": "/img/img-10.jpg",
+      "Quantity": "250ml",
+      "id": "8",
+      "category": "Milk",
+      "quantity": 0
+    },
+    {
+      "title": "Harvest Gold 100% Atta Whole Wheat Bread",
+      "price": "₹360",
+      "Quantity": "450g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/42139f09-bfa0-4445-9827-bae0e2f3e52b.jpg?ts=1726817074",
+      "id": "9",
+      "category": "Bread",
+      "quantity": 0
+    },
+    {
+      "title": "Harvest Gold - White Bread",
+      "price": "₹30",
+      "Quantity": "350g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/a9b8e4d0-62ae-4a55-b0f7-c07d16a09326.jpg?ts=1707564212",
+      "id": "10",
+      "category": "Bread",
+      "quantity": 0
+    },
+    {
+      "title": "English Oven Zero Maida Multigrain Bread",
+      "price": "₹70",
+      "Quantity": "400g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/06996585-ec01-4755-9d1c-c22496a585db.jpg?ts=1727259577",
+      "id": "11",
+      "category": "Bread",
+      "quantity": 0
+    },
+    {
+      "title": "Harvest Gold Bombay Pav",
+      "price": "₹45",
+      "Quantity": "250g (6 pieces)",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/65677a.jpg?ts=1683810911",
+      "id": "12",
+      "category": "Bread",
+      "quantity": 0
+    },
+    {
+      "title": "Nature's Own 100% Whole Wheat Bread",
+      "price": "₹40",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/a10050bd-088a-458e-b091-2b465d9ecc92.jpg?ts=1729354406",
+      "Quantity": "450g",
+      "id": "13",
+      "category": "Bread",
+      "quantity": 0
+    },
+    {
+      "title": "The Health Factory Zero Maida Protein Bread",
+      "price": "₹75",
+      "Quantity": "250g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/b8293578-ffb3-49d8-ba67-d7716241387e.jpg?ts=1723461311",
+      "id": "14",
+      "category": "Bread",
+      "quantity": 0
+    },
+    {
+      "title": "Harvest Gold Bombay Pav",
+      "price": "₹45",
+      "Quantity": "250g (6 pieces)",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/65677a.jpg?ts=1683810911",
+      "id": "15",
+      "category": "Bread",
+      "quantity": 0
+    },
+    {
+      "title": "English Oven Pizza Base",
+      "price": "₹50",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/477dc2f1-3ba4-4efd-b4cf-edacdddffd9b.jpg?ts=1727259408",
+      "Quantity": "450g",
+      "id": "16",
+      "category": "Bread",
+      "quantity": 0
+    },
+    {
+      "title": "Kellogg's Corn Flakes Original",
+      "price": "₹195",
+      "Quantity": "475g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/b057c9ee-680f-45ae-a340-4a275130d486.jpg?ts=1730105402",
+      "id": "17",
+      "category": "Flakes",
+      "quantity": 0
+    },
+    {
+      "title": "Kellogg's Multigrain Chocos Variety Pack",
+      "price": "₹64",
+      "Quantity": "7 units",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/01428d59-ceb0-45a0-890b-021702617a72.jpg?ts=1729838335",
+      "id": "18",
+      "category": "Flakes",
+      "quantity": 0
+    },
+    {
+      "title": "Kellogg's Double Chocolaty Fills Chocos",
+      "price": "₹185",
+      "Quantity": "250g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/373664a.jpg?ts=1704788858",
+      "id": "19",
+      "category": "Flakes",
+      "quantity": 0
+    },
+    {
+      "title": "Kwality Cookies Rings Cereal",
+      "price": "₹222",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/534437a.jpg",
+      "Quantity": "375g",
+      "id": "20",
+      "category": "Flakes",
+      "quantity": 0
+    },
+    {
+      "title": "Kellogg's Corn Flakes With Real Honey",
+      "price": "₹170",
+      "Quantity": "300g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/5c1d9645-0653-4dec-9e40-e0fa4877eb1e.jpg?ts=1731943369",
+      "id": "21",
+      "category": "Flakes",
+      "quantity": 0
+    },
+    {
+      "title": "Tata Soulfull Ragi Bites Breakfast Cereal",
+      "price": "₹281",
+      "Quantity": "500g ",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/f196bc0d-5e17-49c5-98f3-6746da0ebb2e.jpg?ts=1728667638",
+      "id": "22",
+      "category": "Flakes",
+      "quantity": 0
+    },
+    {
+      "title": "Kellogg's Special K Original Cereal",
+      "price": "₹390",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/b0add628-e528-48ce-a662-4bf2198d71d7.jpg?ts=1707548410",
+      "Quantity": "935g",
+      "id": "23",
+      "category": "Flakes",
+      "quantity": 0
+    },
+    {
+      "title": "Tata Soulfull Ragi Bites Kids Breakfast",
+      "price": "₹463",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/1ff9450a-0115-433c-b5eb-0f354b7330e8.jpg?ts=1728583461",
+      "Quantity": "1.2kg",
+      "id": "24",
+      "category": "Flakes",
+      "quantity": 0
+    },
+    {
+      "title": "Hello Tempayy Soyabean Tempeh Cubes",
+      "price": "₹99",
+      "Quantity": "200g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/06f0f8e3-4fd6-4fca-8be7-6aec5ee8de5f.jpg?ts=1731491415",
+      "id": "25",
+      "category": "Paneer",
+      "quantity": 0
+    },
+    {
+      "title": "Amul Fresh Malai Paneer",
+      "price": "₹91",
+      "Quantity": "200 g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/f793c3fd-dc65-49ce-bc39-a5fa7c3b4421.jpg?ts=1726473630",
+      "id": "26",
+      "category": "Paneer",
+      "quantity": 0
+    },
+    {
+      "title": "Ananda Premium Paneer",
+      "price": "₹90",
+      "Quantity": "200 g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/0ce9407d-446b-482c-bafa-a7c6fc6c66cb.jpg?ts=1708592059",
+      "id": "27",
+      "category": "Paneer",
+      "quantity": 0
+    },
+    {
+      "title": "Amul Malai Paneer",
+      "price": "₹95",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/64304b98-bbd0-4b80-8f89-7fbb95b6f155.jpg?ts=1707312317",
+      "Quantity": "200 g",
+      "id": "28",
+      "category": "Paneer",
+      "quantity": 0
+    },
+    {
+      "title": "Diet Tofu Soya Tofu",
+      "price": "₹46",
+      "Quantity": "200g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/391896a.jpg?ts=1690814714",
+      "id": "29",
+      "category": "Paneer",
+      "quantity": 0
+    },
+    {
+      "title": "Hello Tempayy Spicy Peri Peri ",
+      "price": "₹281",
+      "Quantity": "200g ",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/c8787c7a-58fd-4ca1-bde6-25dcfe60ef4c.jpg?ts=1717572748",
+      "id": "30",
+      "category": "Paneer",
+      "quantity": 0
+    },
+    {
+      "title": "Hello Tempayy Simply Sriracha Soyabean Tempeh Cubes",
+      "price": "₹109",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/fc57cf07-2222-406b-aa45-e17de843cda8.jpg?ts=1731491426",
+      "Quantity": "200g",
+      "id": "31",
+      "category": "Paneer",
+      "quantity": 0
+    },
+    {
+      "title": "Hello Tempayy Spiced Tawa Masala Soyabean Tempeh Cubes",
+      "price": "₹109",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/e2aa242a-9704-48cf-ab20-7c5334374f3f.jpg?ts=1731491420",
+      "Quantity": "200 g",
+      "id": "32",
+      "category": "Paneer",
+      "quantity": 0
+    },
+    {
+      "title": "Amul Masti Pouch Curd",
+      "price": "₹140",
+      "Quantity": "400g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/6ae62ec2-3b13-4fff-b052-2ff3d4ef2d16.jpg?ts=1726473593",
+      "id": "33",
+      "category": "Curd",
+      "quantity": 0
+    },
+    {
+      "title": "Mother Dairy Classic Pouch Curd",
+      "price": "₹35",
+      "Quantity": "400 g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/86446a.jpg?ts=1687948913",
+      "id": "34",
+      "category": "Curd",
+      "quantity": 0
+    },
+    {
+      "title": "Mother Dairy Classic Cup Curd",
+      "price": "₹50",
+      "Quantity": "400 g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/329549a.jpg?ts=1690805806",
+      "id": "35",
+      "category": "Curd",
+      "quantity": 0
+    },
+    {
+      "title": "Amul Masti Curd",
+      "price": "₹23",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/73bcc2db-0799-4014-ab75-029bfcdb8375.jpg?ts=1726473603",
+      "Quantity": "200 g",
+      "id": "36",
+      "category": "Curd",
+      "quantity": 0
+    },
+    {
+      "title": "Nestle a+ Curd (Thick & Creamy)",
+      "price": "₹75",
+      "Quantity": "380g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/526253a.jpg?ts=1690813233",
+      "id": "37",
+      "category": "Curd",
+      "quantity": 0
+    },
+    {
+      "title": "Amul Curd",
+      "price": "₹50",
+      "Quantity": "850g ",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/0e07b9e3-8968-4058-932c-e877df190918.jpg?ts=1726474555",
+      "id": "38",
+      "category": "Curd",
+      "quantity": 0
+    },
+    {
+      "title": "Mother Dairy Mishti Doi",
+      "price": "₹20",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/4cd33103-f0f9-4529-b99b-8039aa6ce7fe.jpg?ts=1707312318",
+      "Quantity": "80g",
+      "id": "39",
+      "category": "Curd",
+      "quantity": 0
+    },
+    {
+      "title": "epigamia Blueberry Flavoured Greek Yogurt",
+      "price": "₹114",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/e53a1de9-af17-46fb-a548-3b04e11246e9.jpg?ts=1720441546",
+      "Quantity": "85 g",
+      "id": "40",
+      "category": "Curd",
+      "quantity": 2
+    },
+    {
+      "title": "MTR Rava idli Breakfast Mix",
+      "price": "₹450",
+      "Quantity": "1 kg",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/3655702c-5039-4132-8e0a-aa8194a948db.jpg?ts=1723375168",
+      "id": "41",
+      "category": "Breakfast",
+      "quantity": 0
+    },
+    {
+      "title": "MOM - Meal of The Moment",
+      "price": "₹130",
+      "Quantity": "75 g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/fbc15f00-0869-4284-b826-a1df62214400.jpg?ts=1721990214",
+      "id": "42",
+      "category": "Breakfast",
+      "quantity": 0
+    },
+    {
+      "title": "MTR 3 Minute Poha Breakfast Mix",
+      "price": "₹420",
+      "Quantity": "60 g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/7eea38a5-1c35-4b0f-b359-c50bc641268d.jpg?ts=1723098369",
+      "id": "43",
+      "category": "Breakfast",
+      "quantity": 0
+    },
+    {
+      "title": "MTR Dosa Breakfast Mix",
+      "price": "₹109",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/7eea38a5-1c35-4b0f-b359-c50bc641268d.jpg?ts=1723098369",
+      "Quantity": "500 g",
+      "id": "44",
+      "category": "Breakfast",
+      "quantity": 0
+    },
+    {
+      "title": "MTR Upma Breakfast Mix",
+      "price": "₹110",
+      "Quantity": "160g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/d6d1b53c-7c18-43f8-ba0d-3d5427a9c908.jpg?ts=1723374650",
+      "id": "45",
+      "category": "Breakfast",
+      "quantity": 0
+    },
+    {
+      "title": "English Oven Fruit Bun ",
+      "price": "₹20",
+      "Quantity": "150g (2 piece) ",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/dd75bc1e-7fe6-4d0a-954b-200f65dc8864.jpg?ts=1706951997",
+      "id": "46",
+      "category": "Breakfast",
+      "quantity": 0
+    },
+    {
+      "title": "Gits Khaman Dhokla Instant Mix",
+      "price": "₹64",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/cfd68417-60a1-44ca-92b4-f23c1e047a49.jpg?ts=1723374908",
+      "Quantity": "180g",
+      "id": "47",
+      "category": "Breakfast",
+      "quantity": 0
+    },
+    {
+      "title": "Gits Khatta Dhokla Instant Mix",
+      "price": "₹66",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/918dff34-30d7-4a73-9bc5-8561dac368fa.jpg?ts=1723374869",
+      "Quantity": "200 g",
+      "id": "48",
+      "category": "Breakfast",
+      "quantity": 0
+    },
+    {
+      "title": "Britannia Laughing Cow Cheese Slices",
+      "price": "₹1770",
+      "Quantity": "400 g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/481241a.jpg?ts=1682332534",
+      "id": "49",
+      "category": "Cheese",
+      "quantity": 0
+    },
+    {
+      "title": "Amul Pure Milk Cheese Slices",
+      "price": "₹145",
+      "Quantity": "200 g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/0f895474-ac1e-4f52-9587-891e32ab1ba9.jpg?ts=1707312315",
+      "id": "50",
+      "category": "Cheese",
+      "quantity": 0
+    },
+    {
+      "title": "Britania Creamy Cheese Spread Sachets",
+      "price": "₹135",
+      "Quantity": "10 * 15 g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/1de9ea7d-cda3-4f23-a11d-4ad26e6b77ef.jpg",
+      "id": "51",
+      "category": "Cheese",
+      "quantity": 0
+    },
+    {
+      "title": "Amul Yummy Plain Cheese Spread",
+      "price": "₹110",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/30c1515e-a41e-4d61-abbb-7f75d368a67f.jpg?ts=1707312316",
+      "Quantity": "200 g",
+      "id": "52",
+      "category": "Cheese",
+      "quantity": 0
+    },
+    {
+      "title": "Britannia Laughing Cow Creamy Cheese Triangle",
+      "price": "₹128",
+      "Quantity": "120g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/479844a.jpg?ts=1704259373",
+      "id": "53",
+      "category": "Cheese",
+      "quantity": 0
+    },
+    {
+      "title": "D'lecta Mozzarella Cheese - Shredded ",
+      "price": "₹300",
+      "Quantity": "500 g ",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/f78ca61f-6696-4bae-b14f-c115892bd5d3.jpg?ts=1729233456",
+      "id": "54",
+      "category": "Cheese",
+      "quantity": 0
+    },
+    {
+      "title": "Britannia Laughing Cow Cheese Block",
+      "price": "₹124",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/19145a.jpg?ts=1682332533",
+      "Quantity": "200g",
+      "id": "55",
+      "category": "Cheese",
+      "quantity": 0
+    },
+    {
+      "title": "D'lecta Cream Cheese",
+      "price": "₹180",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/918dff34-30d7-4a73-9bc5-8561dac368fa.jpg?ts=1723374869",
+      "Quantity": "150 g",
+      "id": "56",
+      "category": "Cheese",
+      "quantity": 0
+    },
+    {
+      "title": "The Whole Truth Protein Bar Assorted",
+      "price": "₹432",
+      "Quantity": "216 g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/21fab27a-7dac-4905-9307-cd09eb77c99d.jpg",
+      "id": "57",
+      "category": "Energy",
+      "quantity": 0
+    },
+    {
+      "title": "Yoga Bar Chocolate Chunk",
+      "price": "₹38",
+      "Quantity": "38 g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/b56488f8-430e-4a82-9aa2-03d4bde655a5.jpg?ts=1723098534",
+      "id": "58",
+      "category": "Energy",
+      "quantity": 0
+    },
+    {
+      "title": "RiteBite Max Protein",
+      "price": "₹140",
+      "Quantity": "2 * 50 g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/2cf41b47-c92c-4e92-aadb-1f27c7736723.jpg?ts=1717419205",
+      "id": "59",
+      "category": "Energy",
+      "quantity": 0
+    },
+    {
+      "title": "The Whole Truth 20g Protein Bar",
+      "price": "₹132",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/8c4d3c19-72a1-494d-b3a2-706728174f79.jpg?ts=1723379057",
+      "Quantity": "67 g",
+      "id": "60",
+      "category": "Energy",
+      "quantity": 0
+    },
+    {
+      "title": "RiteBite Max Protein Bar(peanut Butter)",
+      "price": "₹335",
+      "Quantity": "3 * 70 g",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/7f05639f-6daf-488f-8db9-448883853b36.jpg?ts=1706690824",
+      "id": "61",
+      "category": "Energy",
+      "quantity": 0
+    },
+    {
+      "title": "RiteBite Max Protein Energy Bar(Fruits) ",
+      "price": "₹71",
+      "Quantity": "50 g ",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/b6d0060e-b66d-4560-a633-62df44543297.jpg?ts=1723380982",
+      "id": "62",
+      "category": "Energy",
+      "quantity": 0
+    },
+    {
+      "title": "The Whole Almond Choco Fudge...",
+      "price": "₹132",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/full_screen/pro_484447.jpg?ts=1710347363",
+      "Quantity": "2 * 40 g",
+      "id": "63",
+      "category": "Energy",
+      "quantity": 0
+    },
+    {
+      "title": "RiteBite Max Protein Energy Bar(Fruits)",
+      "price": "₹140",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/4dbee70f-6b15-4d85-a334-0f764cb9d430.jpg?ts=1706690824",
+      "Quantity": "2 * 50 g",
+      "id": "64",
+      "category": "Energy",
+      "quantity": 0
+    }
+  ]
+}
